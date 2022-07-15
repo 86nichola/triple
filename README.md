@@ -1,3 +1,16 @@
-# triple homework repository
+# homework repository
 
-- homework 제출을 위한 저장소
+- 프로젝트 실행방법
+
+##1. package.json 설치적용
+
+```console
+npm install -i
+```
+
+##2. local 실행
+
+```console
+npm start
+
+```

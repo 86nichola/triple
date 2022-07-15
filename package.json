@@ -1,0 +1,67 @@
+{
+  "name": "@titicaca/unicorn-project",
+  "version": "0.0.1",
+  "prettier": "@titicaca/eslint-config-triple/prettierrc",
+  "main": "index.tsx",
+  "scripts": {
+    "predeploy": "npm run build",
+    "bundle": "webpack",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production --env production",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier '**/*' --check",
+    "prettier:fix": "prettier '**/*' --write",
+    "lint:es": "eslint '**/*.{js,ts,tsx}'",
+    "lint:es:fix": "npm run lint:es -- --fix",
+    "lint:style": "stylelint './**/*.{js,ts,tsx}'",
+    "lint:style:fix": "stylelint './**/*.{js,ts,tsx}' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/86nichola/triple.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/86nichola/triple/issues"
+  },
+  "homepage": "https://github.com/86nichola/triple",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-transition-group": "^4.4.2",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@titicaca/eslint-config-triple": "^3.1.0",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-transition-group": "^4.4.2",
+    "@types/styled-components": "^5.1.25",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "dotenv-webpack": "^7.1.1",
+    "eslint": "^8.19.0",
+    "eslint-import-resolver-typescript": "^3.2.4",
+    "eslint-plugin-react": "^7.30.1",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}
