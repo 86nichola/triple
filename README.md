@@ -5,7 +5,7 @@
 ##1. package.json 설치적용
 
 ```console
-npm install -i
+npm install -i / npm ci
 ```
 
 ##2. local 실행
